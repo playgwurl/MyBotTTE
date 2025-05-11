@@ -1,0 +1,10 @@
+{
+    "java.project.sourcePaths": ["src"],
+    "java.project.outputPath": "bin",
+    "java.project.referencedLibraries": [
+        "lib/**/*.jar",
+        "/Users/sarina/Desktop/Java/AuD_Codes/Fucking_Wettbewerb/tte-bot-full.jar",
+        "/Users/sarina/Desktop/Java/AuD_Codes/Fucking_Wettbewerb/tte-bot.jar"
+    ],
+    "java.compile.nullAnalysis.mode": "automatic"
+}
