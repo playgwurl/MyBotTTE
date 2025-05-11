@@ -1,0 +1,34 @@
+name: Build and Release MyBot
+
+on:
+  push:
+    tags:
+      - 'v*' # z. B. v1.0, v1.1, ...
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v3
+
+      - name: Set up Java
+        uses: actions/setup-java@v3
+        with:
+          distribution: 'temurin'
+          java-version: '17'
+
+      - name: Compile Java bot
+        run: |
+          mkdir -p bin
+          javac -d bin src/*.java
+
+      - name: Create jar
+        run: |
+          jar cf MyBot.jar -C bin .
+
+      - name: Upload release
+        uses: softprops/action-gh-release@v1
+        with:
+          files: MyBot.jar
