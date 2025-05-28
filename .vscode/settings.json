@@ -4,7 +4,9 @@
     "java.project.referencedLibraries": [
         "lib/**/*.jar",
         "/Users/sarina/Desktop/Java/AuD_Codes/Fucking_Wettbewerb/tte-bot-full.jar",
-        "/Users/sarina/Desktop/Java/AuD_Codes/Fucking_Wettbewerb/tte-bot.jar"
+        "/Users/sarina/Desktop/Java/AuD_Codes/Fucking_Wettbewerb/tte-bot.jar",
+        "tte-bot-full.jar",
+        "tte-bot.jar"
     ],
     "java.compile.nullAnalysis.mode": "automatic"
 }
